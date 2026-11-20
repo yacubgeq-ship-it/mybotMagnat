@@ -8,11 +8,11 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 # ================= НАСТРОЙКИ (ЧИТАЮТСЯ С САЙТА RAILWAY) =================
 BOT_TOKEN = os.getenv("BOT_TOKEN")
-ADMIN_ID = int(os.getenv("ADMIN_ID" 8158495271))
+ADMIN_ID = int(os.getenv("ADMIN_ID" 0))
 
 if not BOT_TOKEN:
     raise ValueError("Ошибка: Переменная окружения BOT_TOKEN не найдена! Проверь настройки в Railway.")
-if ADMIN_ID == 8158495271:
+if ADMIN_ID == 0:
     print("⚠️ Внимание: ADMIN_ID не установлен. Админ-панель будет недоступна.")
 
 # Конфигурация буров (механика игры)
